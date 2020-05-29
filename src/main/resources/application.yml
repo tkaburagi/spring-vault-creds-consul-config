@@ -1,6 +1,11 @@
 spring:
   application:
-    name: vault-tokenization-demoapp
-  datasource:
-    url: jdbc:mysql://127.0.0.1:3306/handson?useSSL=false
-    driver-class-name: com.mysql.jdbc.Driver
+    name: vault-creds-fs-demoapp
+#  datasource:
+#    url: jdbc:mysql://127.0.0.1:3306/handson?useSSL=false
+#    driver-class-name: com.mysql.jdbc.Driver
+#    dbcp2:
+#      test-on-borrow: true
+    hikari:
+      max-lifetime: 30000
+

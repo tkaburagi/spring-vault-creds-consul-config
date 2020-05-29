@@ -1,0 +1,11 @@
+{
+  "request_id": "2160dfe3-168b-d60c-4b3d-5421ab3c9843",
+  "lease_id": "database/creds/role-handson/hlTEQFgg1CWulLBLfi5WyNNK",
+  "lease_duration": 3600,
+  "renewable": true,
+  "data": {
+    "password": "A1a-lwaKUE8arVEc8IeG",
+    "username": "v-role-MCdP8nIBo"
+  },
+  "warnings": null
+}

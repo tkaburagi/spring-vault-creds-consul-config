@@ -1,0 +1,43 @@
+2020-05-15 15:19:57.736  INFO 38630 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4812cfa3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 15:19:58.232  INFO 38630 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.6.RELEASE)
+
+2020-05-15 15:19:58.474  INFO 38630 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='vault', propertySources=[LeaseAwareVaultPropertySource {name='secret/application'}, LeaseAwareVaultPropertySource {name='database with Role role-demoapp'}]}
+2020-05-15 15:19:58.483  INFO 38630 --- [           main] r.k.v.VaultTokenizationDemoApplication   : No active profile set, falling back to default profiles: default
+2020-05-15 15:19:59.012  INFO 38630 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-15 15:19:59.056  INFO 38630 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37ms. Found 1 JPA repository interfaces.
+2020-05-15 15:19:59.176  INFO 38630 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b22f3b62-2166-32a1-81ca-e3fc0bdf8d1a
+2020-05-15 15:19:59.320  INFO 38630 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4812cfa3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 15:19:59.491  INFO 38630 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-15 15:19:59.499  INFO 38630 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-15 15:19:59.500  INFO 38630 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-15 15:19:59.558  INFO 38630 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-15 15:19:59.558  INFO 38630 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1061 ms
+2020-05-15 15:19:59.988  INFO 38630 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-15 15:20:00.234  INFO 38630 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-15 15:20:00.290  INFO 38630 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-15 15:20:00.380  INFO 38630 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-15 15:20:00.551  INFO 38630 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-15 15:20:00.697  INFO 38630 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-05-15 15:20:01.246  INFO 38630 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-15 15:20:01.253  INFO 38630 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-15 15:20:01.656  WARN 38630 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-15 15:20:01.757  INFO 38630 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-15 15:20:01.963  INFO 38630 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-15 15:20:02.094  INFO 38630 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-15 15:20:02.097  INFO 38630 --- [           main] r.k.v.VaultTokenizationDemoApplication   : Started VaultTokenizationDemoApplication in 5.176 seconds (JVM running for 5.541)
+2020-05-15 15:20:03.184  INFO 38630 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-15 15:20:03.184  INFO 38630 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-15 15:20:03.190  INFO 38630 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-05-15 15:20:24.738  INFO 38630 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-15 15:20:24.739  INFO 38630 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-15 15:20:24.743  INFO 38630 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-15 15:20:24.752  INFO 38630 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-15 15:20:24.799  INFO 38630 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService

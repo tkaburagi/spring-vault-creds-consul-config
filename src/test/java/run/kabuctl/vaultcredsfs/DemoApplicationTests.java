@@ -1,10 +1,10 @@
-package run.kabuctl.vaulttokenizationdemo;
+package run.kabuctl.vaultcredsfs;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class VaultTokenizationDemoApplicationTests {
+class DemoApplicationTests {
 
     @Test
     void contextLoads() {

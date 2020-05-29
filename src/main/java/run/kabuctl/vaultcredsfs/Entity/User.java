@@ -1,4 +1,4 @@
-package run.kabuctl.vaulttokenizationdemo.Entity;
+package run.kabuctl.vaultcredsfs.Entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
