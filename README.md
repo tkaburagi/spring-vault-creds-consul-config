@@ -99,8 +99,18 @@ $ curl 127.0.0.1:8080//api/v1/get-all-users | jq
 $ ./update-config.sh
 ```
 
+This script will
+* generate new mysql creds and store to file
+* make the new application.yml with new creds
+* update application.yml to Consul KV
+* revoke old mysql creds
+
 make sure 
 * consul kv is updated.
 * The app log output connection pool is recreated.
 * the old creds in mysql.json.backup is invalid by trying login to MySQL
 
+After Configuration is updated in Consul KV, refresh event is published to application and this app will recreate connection pool using new configuration
+
+refer: 
+* [Spring Cloud Config](https://cloud.spring.io/spring-cloud-consul/reference/html/#spring-cloud-consul-config) 
