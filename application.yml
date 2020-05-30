@@ -2,8 +2,8 @@ spring:
   application:
     name: vault-creds-fs-demoapp
   datasource:
-    password: A1a-bIv4FWr4pPI1C66p
-    username: v-role-OS7DLVWqA
+    password: A1a-1mW71ypNrgEoFULd
+    username: v-role-VCX86BrdS
     url: jdbc:mysql://127.0.0.1:3306/handson?useSSL=false
     driver-class-name: com.mysql.jdbc.Driver
     hikari:
@@ -14,3 +14,4 @@ management:
     web:
       exposure:
         include: "*"
+
