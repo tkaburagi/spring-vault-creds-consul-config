@@ -34,7 +34,6 @@ management:
 * running MySQL
 * setting Vault DB Secret Engine
 
-
 ```shell script
 $ vault secrets enable database;
 $ vault write database/roles/role-handson \
@@ -49,6 +48,11 @@ $ vault write database/config/mysql-handson-db
   allowed_roles="role-demoapp" \
   username="root" \
   password="rooooot"
+```
+
+* create table
+```sql
+create table users_tokenization (id varchar(50), username varchar(50), password varchar(200), email varchar(200), creditcard varchar(200), flag varchar(30));
 ```
 
 ## How to demo
