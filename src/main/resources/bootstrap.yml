@@ -1,0 +1,12 @@
+# Distributed Configurations
+spring:
+  application:
+    name: vault-creds-fs-demoapp
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      config:
+        format: YAML
+        enabled: true
+        prefix: config

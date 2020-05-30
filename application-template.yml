@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: vault-creds-fs-demoapp
+  datasource:
+    password: PASSWORD
+    username: USERNAME
+    url: jdbc:mysql://127.0.0.1:3306/handson?useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      max-lifetime: 30000
+      connection-timeout: 300
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

@@ -1,11 +1,10 @@
 spring:
   application:
     name: vault-creds-fs-demoapp
-#  datasource:
-#    url: jdbc:mysql://127.0.0.1:3306/handson?useSSL=false
-#    driver-class-name: com.mysql.jdbc.Driver
-#    dbcp2:
-#      test-on-borrow: true
+  datasource:
     hikari:
       max-lifetime: 30000
+      connection-timeout: 300
+#    dbcp2:
+#      test-on-borrow: true
 
