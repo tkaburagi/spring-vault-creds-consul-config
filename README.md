@@ -52,6 +52,8 @@ $ vault write database/config/mysql-handson-db
 
 * create table
 ```sql
+create database handson;
+use handson;
 create table users_tokenization (id varchar(50), username varchar(50), password varchar(200), email varchar(200), creditcard varchar(200), flag varchar(30));
 ```
 
