@@ -30,6 +30,7 @@ management:
 * Example of `bootstrap.yml` to get the config file from Consul KV.
 
 ## Pre-requisite
+* running Consul by default configuration
 * running MySQL
 * setting Vault DB Secret Engine
 
@@ -77,7 +78,7 @@ $ curl 127.0.0.1:8080//api/v1/get-all-users | jq
       "flag": "simple-transformation"
     },
     {
-      "id": "b06a78b1-1669-409b-b4d1-824b2507959f",
+      "id": "b06a78b1-1669-409b-b4d1-824b25037959f",
       "username": "user-3",
       "password": "vault:v1:K2UHGhbesPmN/AChSePnkaqWp0jXEKt+Aa3sDF0DguqLe/6x",
       "email": "e4V0K@kabuctl.run",
