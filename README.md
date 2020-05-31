@@ -132,6 +132,7 @@ make sure
 * consul kv is updated.
 * The app log output connection pool is recreated.
 * the old creds in mysql.json.backup is invalid by trying login to MySQL
+* service still keeps to be running
 
 After Configuration is updated in Consul KV, refresh event is published to application and this app will recreate connection pool using new configuration
 
