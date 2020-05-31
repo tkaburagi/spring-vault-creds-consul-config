@@ -49,6 +49,8 @@ spring:
 * running MySQL
 * setting Vault DB Secret Engine
 
+`root` password is `rooooot` in this case.
+
 ```shell script
 $ vault secrets enable database;
 $ vault write database/roles/role-handson \
@@ -65,11 +67,10 @@ $ vault write database/config/mysql-handson-db
   password="rooooot"
 ```
 
-* create table
+* create table and insert data
 ```sql
-create database handson;
-use handson;
-create table users_tokenization (id varchar(50), username varchar(50), password varchar(200), email varchar(200), creditcard varchar(200), flag varchar(30));
+git clone https://github.com/tkaburagi/spring-vault-creds-consul-config
+mysql -u root -p < /path/to/setup.sql
 ```
 
 ## How to demo
