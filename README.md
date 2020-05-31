@@ -29,6 +29,21 @@ management:
 
 * Example of `bootstrap.yml` to get the config file from Consul KV.
 
+```yaml
+# Distributed Configurations
+spring:
+  application:
+    name: vault-creds-fs-demoapp
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      config:
+        format: YAML
+        enabled: true
+        prefix: config
+```
+
 ## Pre-requisite
 * running Consul by default configuration
 * running MySQL
@@ -38,7 +53,7 @@ management:
 $ vault secrets enable database;
 $ vault write database/roles/role-handson \
   db_name=mysql-handson-db \
-  creation_statements="CREATE USER '{{name}}'@'%' IDENTIFIED BY '{{password}}';GRANT SELECT,INSERT,UPDATE ON handson.users TO '{{name}}'@'%';" \
+  creation_statements="CREATE USER '{{name}}'@'%' IDENTIFIED BY '{{password}}';GRANT SELECT,INSERT,UPDATE ON handson.users_tokenization TO '{{name}}'@'%';" \
   default_ttl="5h" \
   max_ttl="5h"
 
